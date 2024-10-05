@@ -59,6 +59,7 @@ plugins:
 
 head_scripts:
   - /assets/scripts/simple_icons.js
+  - /assets/scripts/share_copy.js
 
 
 author:
