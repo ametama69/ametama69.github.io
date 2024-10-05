@@ -12,7 +12,7 @@ style.textContent = `
 `;
 
 
-for (const iconname of ["bluesky","niconico","github","instagram","misskey","mastodon","activitypub","scrapbox","x","rss"]) {
+for (const iconname of ["bluesky","niconico","github","instagram","misskey","mastodon","activitypub","scrapbox","x","rss","threads"]) {
   style.textContent += `
 .si-${iconname}::before{
   background-image: url(https://cdn.simpleicons.org/${iconname});
