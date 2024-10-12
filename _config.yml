@@ -23,6 +23,11 @@ minimal_mistakes_skin: default
 search: true
 locale: ja-JP
 
+
+logo : /assets/images/logo.png
+teaser: /assets/images/default_teaser.png
+og_image: /assets/images/oglogo.png
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
