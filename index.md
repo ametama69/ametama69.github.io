@@ -4,6 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 author_profile: true
+title: ""
 ---
 ### Tools
 [TF Search](https://ametama69.github.io/tfsearch/)
