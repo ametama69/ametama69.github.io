@@ -7,16 +7,20 @@
     transition: transform 0.3s;
 }
 
+.am-card a{
+    text-decoration: none;
+}
+
 .am-card:hover {
     transform: scale(1.02);
 }
-
 .am-cardimg {
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%; /* 16:9 アスペクト比 */
+    padding-bottom: 42.5%; /* 2.35:1 アスペクト比 */
     position: relative;
 }
+
 
 .am-cardimg img {
     position: absolute;
@@ -34,12 +38,12 @@
 .am-card-content h3 {
     margin: 0 0 10px;
     font-size: 1.2em;
+    text-decoration: solid;
 }
 
 .am-card-content p {
     margin: 0;
     font-size: 0.8em;
-    text-decoration: none;
     color: #666;
 }
 
