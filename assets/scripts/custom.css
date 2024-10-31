@@ -1,88 +1,77 @@
-
 .am-card-container {
     display: flex;
-    flex-wrap: nowrap; /* 改行せず横ならびにするために変更 */
-    justify-content: space-around; 
-    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px;
 }
-
+  
 .am-card {
-    background-color: #f9f9f9; 
-    border: 1px solid #ccc; 
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
-    margin: 15px; 
     overflow: hidden;
-    width: calc(100% - 30px); 
-    transition: transform 0.3s, box-shadow 0.3s; 
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-
+    flex-direction: column;
+    width: calc(100% - 20px);
 }
-
-.am-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
-}
-
+  
 .am-cardimg {
-    flex: 0 0 40%; 
-    position: relative; 
-    width: 100%; 
-    padding-top: 75%;
-    overflow: hidden; 
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
 }
-
-.am-card-content {
-    flex: 1; 
-    padding: 10px; 
-}
-
+  
 .am-cardimg img {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    width: 100%; 
-    height: auto; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     transform: translate(-50%, -50%);
-    object-fit: cover; 
+    object-fit: cover;
 }
-.am-card h3 {
-    font-size: 1.3em; 
-    margin: 15px; 
-    color: #333; 
+  
+.am-card-content {
+    padding: 15px;
+    background-color: #fff;
 }
-
-.am-card p {
-    font-size: 0.7em;
-    margin: 0 15px 15px; 
+  
+h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+  
+p {
+    margin: 0;
     color: #666;
 }
-
-@media (max-width: 1020px) {
+  
+@media (min-width: 429px) and (max-width: 1020px) {
     .am-card {
-        width: calc(50% - 30px);
-        
-        flex-direction: column; 
-    }
-
-    .am-cardimg {
-        width: 100%; /* スマホビューでは幅を100%に設定 */
-        padding-top: 75%; 
+        width: calc(50% - 20px);
     }
 }
-
-@media (max-width: 428px) {
-    .am-card-container{
-        flex-wrap: wrap;
-    }
+  
+@media (min-width: 1021px) {
     .am-card {
-        width: calc(100% - 30px);
-        flex-direction: column; 
+        width: 100%;
+        flex-direction: row;
+        height: 8em;
     }
-
+  
     .am-cardimg {
-        width: 100%; /* スマホビューでは幅を100%に設定 */
-        padding-top: 75%; 
+        width: 40%;
+        transform: translate(0, -50%);
+    }
+  
+    .am-card-content {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
     }
 }
-
