@@ -1,7 +1,8 @@
 <div class="am-card-container">
     {% for card in page.cards %}
-    <a href="{{ card.url }}">
+
       <div class="am-card">
+        <a href="{{ card.url }}">
         <div class="am-cardimg">
             <img src="{{ card.image }}" alt="{{ card.title }}">
         </div>
@@ -9,8 +10,8 @@
             <h3>{{ card.title }}</h3>
             <p>{{ card.description }}</p>
         </div>
+      </a>
       </div>
-    </a>
     {% endfor %}
 </div>
 
