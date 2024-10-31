@@ -14,7 +14,13 @@
     flex-direction: column;
     width: calc(100% - 20px);
 }
-  
+
+.am-card:hover {
+    filter: brightness(1.2);
+    transition: filter 0.3s ease-in-out;
+}
+
+
 .am-cardimg {
     width: 100%;
     position: relative;
@@ -47,6 +53,7 @@ h3 {
 p {
     margin: 0;
     color: #666;
+    font-size: 0.8em;
 }
   
 @media (min-width: 429px) and (max-width: 1020px) {
@@ -59,7 +66,7 @@ p {
     .am-card {
         width: 100%;
         flex-direction: row;
-        height: 8em;
+        height: 7em;
     }
   
     .am-cardimg {
