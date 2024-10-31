@@ -13,8 +13,10 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
     margin: 15px; 
     overflow: hidden;
-    width: calc(33% - 30px); 
+    width: calc(100% - 30px); 
     transition: transform 0.3s, box-shadow 0.3s; 
+    display: flex;
+
 }
 
 .am-card:hover {
@@ -23,10 +25,16 @@
 }
 
 .am-cardimg {
+    flex: 0 0 40%; 
     position: relative; 
     width: 100%; 
     padding-top: 75%;
     overflow: hidden; 
+}
+
+.am-card-content {
+    flex: 1; 
+    padding: 10px; 
 }
 
 .am-cardimg img {
@@ -53,6 +61,13 @@
 @media (max-width: 1020px) {
     .am-card {
         width: calc(50% - 30px);
+        
+        flex-direction: column; 
+    }
+
+    .am-cardimg {
+        width: 100%; /* スマホビューでは幅を100%に設定 */
+        padding-top: 75%; 
     }
 }
 
@@ -62,5 +77,12 @@
     }
     .am-card {
         width: calc(100% - 30px);
+        flex-direction: column; 
+    }
+
+    .am-cardimg {
+        width: 100%; /* スマホビューでは幅を100%に設定 */
+        padding-top: 75%; 
     }
 }
+
