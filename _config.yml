@@ -133,4 +133,8 @@ tag_archive:
   type: liquid
   path: /tags/
 
-google_analytics: G-97W65RKGPY
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-97W65RKGPY"
+    anonymize_ip: false # default
