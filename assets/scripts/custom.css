@@ -38,6 +38,8 @@
 
 .am-card-content p {
     margin: 0;
+    font-size: 0.8em;
+    text-decoration: none;
     color: #666;
 }
 
@@ -53,7 +55,7 @@
 @media (min-width: 1021px) {
     .am-card-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
 }
