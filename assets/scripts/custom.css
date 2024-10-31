@@ -1,0 +1,48 @@
+/* link-card-list */
+ // Start of Selection
+.am-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* スペースを均等に配置 */
+    margin: 20px 0;
+}
+
+.am-card {
+    background-color: #f9f9f9; /* 背景色を少し明るく */
+    border: 1px solid #ccc; /* ボーダーの色を少し柔らかく */
+    border-radius: 10px; /* 角を少し丸く */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* シャドウを強調 */
+    margin: 15px; /* マージンを少し広げる */
+    overflow: hidden;
+    width: calc(25% - 30px); /* 4カードをPCで表示 */
+    transition: transform 0.3s, box-shadow 0.3s; /* シャドウの変化も追加 */
+}
+
+.am-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* ホバー時のシャドウを強調 */
+}
+
+.am-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd; /* 画像の下にボーダーを追加 */
+}
+
+.am-card h3 {
+    font-size: 1.3em; /* フォントサイズを少し大きく */
+    margin: 15px; /* マージンを調整 */
+    color: #333; /* テキストの色を濃く */
+}
+
+.am-card p {
+    font-size: 1em; /* フォントサイズを調整 */
+    margin: 0 15px 15px; /* マージンを調整 */
+    color: #666; /* テキストの色を柔らかく */
+}
+
+@media (max-width: 768px) {
+    .am-card {
+        width: calc(100% - 30px); /* モバイルで1カード表示 */
+    }
+}
