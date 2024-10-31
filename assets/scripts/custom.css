@@ -22,12 +22,22 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
 }
 
-.am-card img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd; 
+.am-cardimg {
+    position: relative; /* 相対位置を設定 */
+    width: 100%; /* 幅を100%に設定 */
+    padding-top: 75%; /* 高さを幅の75%に設定（4:3のアスペクト比） */
+    overflow: hidden; /* はみ出した部分を隠す */
 }
 
+.am-cardimg img {
+    position: absolute; /* 絶対位置を設定 */
+    top: 50%; /* 垂直中央に配置 */
+    left: 50%; /* 水平中央に配置 */
+    width: 100%; /* 幅を100%に設定 */
+    height: auto; /* 高さを自動に設定 */
+    transform: translate(-50%, -50%); /* 中央に配置 */
+    object-fit: cover; /* 画像をカバーするように調整 */
+}
 .am-card h3 {
     font-size: 1.3em; 
     margin: 15px; 
@@ -35,12 +45,15 @@
 }
 
 .am-card p {
-    font-size: 1em;
+    font-size: 0.7em;
     margin: 0 15px 15px; 
     color: #666;
 }
 
 @media (max-width: 768px) {
+    .am-card-container{
+        flex-wrap: wrap;
+    }
     .am-card {
         width: calc(100% - 30px);
     }
