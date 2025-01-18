@@ -16,7 +16,7 @@ cards:
     url: "https://ametama69.github.io/socialshare/"
   - title: "Doodle Seed"
     image: "/oekaki/oekaki_ogp.png"
-    description: "シェアボタン試作"
+    description: "ランダム図形が表示されるらくがきアプリ"
     url: "https://ametama69.github.io/oekaki/"
 ---
 ### Tools
