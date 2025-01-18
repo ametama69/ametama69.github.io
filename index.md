@@ -14,6 +14,10 @@ cards:
     image: "/assets/images/oglogo.png"
     description: "シェアボタン試作"
     url: "https://ametama69.github.io/socialshare/"
+  - title: "Doodle Seed"
+    image: "/oekaki/oekaki_ogp.png"
+    description: "シェアボタン試作"
+    url: "https://ametama69.github.io/oekaki/"
 ---
 ### Tools
 
